@@ -3,7 +3,7 @@ name: Deploy Portfolio to S3
 on:
   push:
     branches:
-      - master  # Cambia a 'main' si ese es el nombre de tu rama principal
+      - main
 
 jobs:
   deploy:
