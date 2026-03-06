@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Héctor Saldivia | Backend Engineer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+    color: #e2e8f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.hero h2 {
+    color: #94a3b8;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+.btn {
+    background: linear-gradient(90deg, #38bdf8, #2563eb);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.5);
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.card i {
+    font-size: 40px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #38bdf8;
+    margin-top: 0;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    border-color: #38bdf8;
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.6);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 14px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+    <div><strong>Héctor Saldivia</strong></div>
+    <div>
+        <a href="#stack">Stack</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <img src="./export202208031658109120.png" alt="Héctor Saldivia" class="profile-img">
+    <h1>Backend Engineer</h1>
+    <h2>Java • Quarkus • Spring Boot • Cloud Native</h2>
+    <p>
+        Desarrollo sistemas backend escalables para el sector financiero y asegurador.
+        Especializado en microservicios, Docker, Kubernetes y CI/CD.
+    </p>
+    <a class="btn" href="#proyectos">Ver Proyectos</a>
+</section>
+
+<section id="stack" class="section">
+    <h2>Stack Tecnológico</h2>
+    <div class="cards">
+        <div class="card">
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend</h3>
+            <p>Java 8/11/17<br>Spring Boot<br>Quarkus</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Arquitectura</h3>
+            <p>Microservicios<br>REST APIs<br>Clean Architecture</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>DevOps</h3>
+            <p>Docker<br>Kubernetes<br>Liquibase<br>Jenkins</p>
+        </div>
+    </div>
+</section>
+
+<section id="proyectos" class="section">
+    <h2>Proyectos Destacados</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Microservicio Auth</h3>
+            <p>API con JWT, roles y despliegue en Kubernetes.</p>
+        </div>
+        <div class="card">
+            <h3>Sistema de Reservas</h3>
+            <p>Backend completo con Docker y CI/CD.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Email: canal25.hector@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/hector-saldivia</p>
+</section>
+
+<footer>
+    © 2026 Héctor Saldivia - Backend Engineer
+</footer>
+
+</div>
+</body>
+</html>
